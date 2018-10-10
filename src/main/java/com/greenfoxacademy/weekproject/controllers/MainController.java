@@ -1,5 +1,6 @@
 package com.greenfoxacademy.weekproject.controllers;
 
+import com.greenfoxacademy.weekproject.dtos.InputJSON;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,12 +10,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class MainController {
 
     @GetMapping("/")
-    public String openMainPage(){
+    public String openMainPage() {
         return "main";
     }
 
     @PostMapping("/post")
-    public String saveEntries(InputJSON inpustJSON){
+    public String saveEntries(InputJSON inputJSON) {
         return "redirect:/";
     }
 
